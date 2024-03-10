@@ -287,7 +287,7 @@ BOOL CBRIGHTNESSCTRL::GrayToColor()
 		return false;
 	}
 }
-
+//
 void CBRIGHTNESSCTRL::OnHScroll(UINT nSBCode, UINT nPos, CScrollBar* pScrollBar)
 {
 	
