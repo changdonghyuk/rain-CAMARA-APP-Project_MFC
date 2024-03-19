@@ -525,15 +525,14 @@ void CBRIGHTNESSCTRL::mspin_updown2(NMHDR* pNMHDR, LRESULT* pResult)
 	CString strValue2;
 	strValue2.Format(_T("%d"), m_edit_val2);
 	m_edit2.SetWindowText(strValue2);
-
 	if ((myImg.channels() == 3))
 	{
-		Mat tmpImg2 = myImg.clone();
+		Mat tmpImg2 = myImg.clone(); //open cv4 책= ycrcv 참조
 		cvtColor(tmpImg2, tmpImg2, COLOR_BGR2YCrCb);
 
-		std::vector<Mat> ycrcb_planes2;
-
+		vector<Mat> ycrcb_planes2;
 		split(tmpImg2, ycrcb_planes2);
+
 		float contrast = 1.0;
 
 		ycrcb_planes2[0] = ycrcb_planes2[0] + (m_edit_val2 - 128) * contrast;
@@ -543,13 +542,13 @@ void CBRIGHTNESSCTRL::mspin_updown2(NMHDR* pNMHDR, LRESULT* pResult)
 		equalizeHist(ycrcb_planes2[0], ycrcb_planes2[0]); // 평활화 수행 = in  ->  out
 		merge(ycrcb_planes2, adjustedImage2); // split 한 ycrcb_planes2 와 새로운 Mat adjustedImage2 =merge 시킨다
 
-		cvtColor(adjustedImage2, adjustedImage2.clone(), COLOR_YCrCb2BGR);
 
-
+		cvtColor(adjustedImage2, adjustedImage2, COLOR_YCrCb2BGR);
 
 		// 이미지 표시
 		CreateBitmapInfo(&BitChangeImg2, adjustedImage2.cols, adjustedImage2.rows, adjustedImage2.channels() * 8);
 		DrawImage(adjustedImage2, BitChangeImg2);
+
 		resultImg = adjustedImage2.clone();
 		BitChangeResultImg = BitChangeImg2;
 
