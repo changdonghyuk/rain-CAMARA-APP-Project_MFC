@@ -573,7 +573,7 @@ void CBRIGHTNESSCTRL::mspin_updown2(NMHDR* pNMHDR, LRESULT* pResult)
 		cvtColor(adjustedImage2, tmpImg3, COLOR_YCrCb2BGR);//합친 Mat adjustedImage2 다시 Ycrcb 로 받았던 bgr Mat tmpImg3에 다시 전달
 
 		cvtColor(tmpImg3, myImg, COLOR_BGR2GRAY);//전달받은 output = bgr을 받았던 Mat tmpImg3 를 gray 변환된 기존이미지에 보냄
-
+		//
 		// 이미지 표시
 		CreateBitmapInfo(&BitChangeImg2, myImg.cols, myImg.rows, 8);
 		DrawImage(myImg, BitChangeImg2);
