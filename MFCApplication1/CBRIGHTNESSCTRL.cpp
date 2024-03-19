@@ -536,7 +536,7 @@ void CBRIGHTNESSCTRL::mspin_updown2(NMHDR* pNMHDR, LRESULT* pResult)
 		float contrast = 1.0;
 
 		ycrcb_planes2[0] = ycrcb_planes2[0] + (m_edit_val2 - 128) * contrast;
-
+		//
 		Mat adjustedImage2;
 
 		equalizeHist(ycrcb_planes2[0], ycrcb_planes2[0]); // 평활화 수행 = in  ->  out
