@@ -5,7 +5,7 @@
 ### 주 언어: C++ 
 ### 프로젝트 관리:  🤟🤟[![notion](https://img.shields.io/badge/notion-0?style=for-the-badge&logo=notion&logoColor=white)](https://grizzled-opinion-a02.notion.site/f2bd4d8dc78e41f48f369537ae7e3307?pvs=4) 
 
-### 카메라 앱 시연 영상
+### 카메라 앱 시연 영상 ⬇️👆
 [![RainCamera](https://img.youtube.com/vi/ysjO404VQeE/0.jpg)](https://youtu.be/ysjO404VQeE)
 
 ###  Part. 밝기 기능 시연 영상
