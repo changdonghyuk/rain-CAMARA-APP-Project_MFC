@@ -532,7 +532,7 @@ void CBRIGHTNESSCTRL::mspin_updown2(NMHDR* pNMHDR, LRESULT* pResult)
 
 		vector<Mat> ycrcb_planes2;
 		split(tmpImg2, ycrcb_planes2);
-
+		//
 		float contrast = 1.0;
 
 		ycrcb_planes2[0] = ycrcb_planes2[0] + (m_edit_val2 - 128) * contrast;
