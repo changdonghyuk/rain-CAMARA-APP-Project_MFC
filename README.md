@@ -9,7 +9,7 @@
 [![RainCamera](https://img.youtube.com/vi/ysjO404VQeE/0.jpg)](https://youtu.be/ysjO404VQeE)
 
 ###  Part. 밝기 기능 시연 영상
-<img src="https://github.com/changdonghyuk/rain-CAMARA-APP-Project_MFC/assets/149138756/c019802e-c6b9-451d-b427-9a80d5d2813f" width="550" height="320">
+<img src="https://github.com/changdonghyuk/rain-CAMARA-APP-Project_MFC/assets/149138756/c019802e-c6b9-451d-b427-9a80d5d2813f" width="550" height="200">
 
 ### 프로젝트 목표 
 <img src="https://github.com/changdonghyuk/rain-CAMARA-APP-Project_MFC/assets/149138756/acf93fd6-76f4-4f42-b925-fa758ff280b7" width="600" height="350">
